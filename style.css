@@ -57,9 +57,20 @@ button:hover {
     cursor: pointer;
 }
 
+.mediaLabel {
+    display: none;
+}
+
 @media (max-width: 578px) {
     .discountContainer {
         flex-direction: column;
+    }
+    .discountDisplayContainer {
+        display: none;
+    }
+
+    .mediaLabel {
+        display: block!important;
     }
 
     .dc {
