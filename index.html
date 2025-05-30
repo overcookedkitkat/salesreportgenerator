@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Report Maker - Himalayan Java</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="headingContainer">
+        <h1>Sales Report Maker</h1>
+        <h2>Himalayan Java</h2>
+    </div>
+
+    <div class="calculationContainer">
+        <h2>Discount Calculator</h2>
+        <div class="discountContainer">
+            <div class="dc discountDisplayContainer">
+                <input value="10%" readonly class="discount">
+                <input value="15%" readonly class="discount">
+                <input value="20%" readonly class="discount">
+                <input value="25%" readonly class="discount">
+                <input value="40% Bakery" readonly class="discount">
+                <input value="40% Bring your Mug" readonly class="discount">
+                <input value="50% Staff" readonly class="discount">
+                <input value="Total" readonly class="discount totaldiscount">
+            </div>
+            <div class="dc discountInputContainer">
+                <input type="text" id="d10">
+                <input type="text" id="d15">
+                <input type="text" id="d20">
+                <input type="text" id="d25">
+                <input type="text" id="d40b">
+                <input type="text" id="d40m">
+                <input type="text" id="d50">
+            </div>
+            <div class="dc discountAmountContainer">
+                <input readonly class="discountAmount" id="a10">
+                <input readonly class="discountAmount" id="a15">
+                <input readonly class="discountAmount" id="a20">
+                <input readonly class="discountAmount" id="a25">
+                <input readonly class="discountAmount" id="a40b">
+                <input readonly class="discountAmount" id="a40m">
+                <input readonly class="discountAmount" id="a50">
+                <input readonly class="discountAmount total" id="totalDiscount">
+            </div>
+        </div>
+
+        <h2>Sales Input</h2>
+        <label>Beverage:</label> <input type="number" class="beverage" id="beverage"><br>
+        <label>Nepali Tea Collective:</label> <input type="number" class="ntc" id="ntc"><br>
+        <label>Food:</label> <input type="number" class="food" id="food"><br>
+        <label>Bakery:</label> <input type="number" class="bakery" id="bakery"><br>
+        <label>Merchandise:</label> <input type="number" class="merchandise" id="merchandise"><br>
+        <label>Beer & Wine:</label> <input type="number" class="beerandwine" id="beerandwine"><br>
+        <label>Total Sales:</label> <input type="number" class="totalsale" id="totalSales" readonly><br>
+
+        <h2>Payments</h2>
+        <label>Cash:</label> <input type="number" class="cash" id="cash"><br>
+        <label>Card:</label> <input type="number" class="card" id="card"><br>
+        <label>Fonepay:</label> <input type="number" class="fonepay" id="fonepay"><br>
+        <label>Credit:</label> <input type="number" class="credit" id="credit"><br>
+        <label>Total Payment:</label> <input type="number" class="totalpayment" id="totalPayment" readonly><br>
+
+        <h2>Metrics</h2>
+        <label>Transaction:</label> <input type="number" class="transaction" id="transaction"><br>
+        <label>PAX:</label> <input type="number" class="pax" id="pax"><br>
+        <label>APC:</label> <input type="number" class="apc" id="apc" readonly><br>
+        <label>APT:</label> <input type="number" class="apt" id="apt" readonly><br>
+    </div>
+
+    <button style="margin-top: 20px;" id="generateSalesReportButton">Generate Sales Report</button>
+    <button onclick="clearSaved()">Clear Form</button>
+    <button id="btn" onclick="copy()">Copy</button>
+
+    <textarea id="textarea" style="width: 100%; height: 400px; margin-top: 10px;"></textarea>
+</body>
+</html>
