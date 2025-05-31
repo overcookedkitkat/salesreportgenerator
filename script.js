@@ -28,7 +28,7 @@ document.addEventListener("input", function () {
         let val = parseFloat(el.value);
         if (!isNaN(val)) totalSales += val;
     });
-    document.querySelector(".totalsale").value = totalSales.toFixed(2);
+    document.querySelector(".totalsale").value = (totalSales - document.querySelector(".ntc").value).toFixed(2);
 
     // total payment
     const paymentTypes = ["cash", "card", "fonepay", "credit"];
