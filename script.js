@@ -70,63 +70,64 @@ generateBtn.addEventListener("click", function () {
         return val || "**";
     };
     
-    const report = 
-        `Himalayan Java Coffee Pvt Ltd.
-        Naxal, Narayanchaur
-        Sales report of ${new Date().toDateString()}
+    const report = `
+Himalayan Java Coffee Pvt Ltd.
+Naxal, Narayanchaur
+Sales report of ${new Date().toDateString()}
 
-        1. Total sales : ${getVal("totalsale")}
+1. Total sales : ${getVal("totalsale")}
 
-        a. Beverages : ${getVal("beverage")}
-        b. Bakery : ${getVal("bakery")}
-        c. Food : ${getVal("food")}
-        d. Merchandise : ${getVal("merchandise")}
-        e. Nepali Tea Collective: ${getVal("ntc")}
-        f. Beer and Wine: ${getVal("beerandwine")}
+a. Beverages : ${getVal("beverage")}
+b. Bakery : ${getVal("bakery")}
+c. Food : ${getVal("food")}
+d. Merchandise : ${getVal("merchandise")}
+e. Nepali Tea Collective: ${getVal("ntc")}
+f. Beer and Wine: ${getVal("beerandwine")}
 
-        Somersby Apple Cider: **
-        Barahsinghe Belgian Witbier: **
-        Barahsinghe Hazy IPA: **
-        Barahsinghe Pilsner: **
-        Barahsinghe Pale Ale: **
-        Budwiser Beer: **
-        Corona Beer: **
-        Gorkha: **
-        Tuborg: **
-        Glass two ocean cabernet sauvignon merlot: **
-        Glass two ocean chardonnay: **
+Somersby Apple Cider: **
+Barahsinghe Belgian Witbier: **
+Barahsinghe Hazy IPA: **
+Barahsinghe Pilsner: **
+Barahsinghe Pale Ale: **
+Budwiser Beer: **
+Corona Beer: **
+Gorkha: **
+Tuborg: **
+Glass two ocean cabernet sauvignon merlot: **
+Glass two ocean chardonnay: **
 
-        2. Type of payment :-
-        a. Cash : ${getVal("cash")}
-        b. Card : ${getVal("card")}
-        c. Fonepay : ${getVal("fonepay")}
-        d. Credit : ${getVal("credit")}
+2. Type of payment :-
+a. Cash : ${getVal("cash")}
+b. Card : ${getVal("card")}
+c. Fonepay : ${getVal("fonepay")}
+d. Credit : ${getVal("credit")}
 
-        3. Total discount amount: ${getVal("totalDiscount")}
-        a. 10% : ${getVal("a10")}
-        b. 15% : ${getVal("a15")}
-        c. 20% : ${getVal("a20")}
-        d. 25% : ${getVal("a25")}
-        e. 40% : ${getVal("a40b")}
-        f. Staff discount : ${getVal("a50")}
+3. Total discount amount: ${getVal("totalDiscount")}
+a. 10% : ${getVal("a10")}
+b. 15% : ${getVal("a15")}
+c. 20% : ${getVal("a20")}
+d. 25% : ${getVal("a25")}
+e. 40% : ${getVal("a40b")}
+f. Staff discount : ${getVal("a50")}
 
-        6. No. of transactions : ${getVal("transaction")}
+6. No. of transactions : ${getVal("transaction")}
 
-        7. No. of pax : ${getVal("pax")}
+7. No. of pax : ${getVal("pax")}
 
-        8. APC : ${getVal("apc")}
+8. APC : ${getVal("apc")}
 
-        9. APT : ${getVal("apt")}
+9. APT : ${getVal("apt")}
 
-        10. Takeaway cups :
-        a. 8 oz : **
-        b. 12 oz : **
-        c. 16 oz paper : **
-        d. 16 oz plastic : **
+10. Takeaway cups :
+a. 8 oz : **
+b. 12 oz : **
+c. 16 oz paper : **
+d. 16 oz plastic : **
 
-        11. Total app sales: **
+11. Total app sales: **
 
-        Thank you!!`;
+Thank you!!
+`;
 
     reportArea.value = report;
     console.log(getVal("beverage"));
